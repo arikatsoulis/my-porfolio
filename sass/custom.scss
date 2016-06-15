@@ -1,0 +1,53 @@
+//Custom Css
+
+/*Color Variables*/
+$lime: #b0eb00;
+$bright-red: #b30015;
+$dark-blue: #2a00b3;
+$deep-cerulean: #0077b3;
+$bondi-blue: #00b0b3;
+$cyan: #24fbff;
+$heliotrope: #8a7dff;
+$silver-chalice: #a6a6a6;
+$scorpion: #595959;
+$tundora: #444;
+$mine-shaft: #363636;
+$cod-gray: #111;
+
+*{
+	padding:0;
+	margin:0;
+}
+
+nav{
+	margin: 0 auto;
+	background: blue;
+	width:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2em;
+
+	input{
+		padding: 10px;
+
+	}
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:40px;
+    height:44px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url("http://sallythurer.com/css/sprite.png") left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url("http://sallythurer.com/css/sprite.png") -40px top no-repeat;
+}
